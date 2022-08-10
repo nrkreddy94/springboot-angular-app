@@ -1,0 +1,115 @@
+{
+  "configVersion": 1,
+  "timestamp": 1660156498409,
+  "index": "/store/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/store/favicon.ico",
+        "/store/index.html",
+        "/store/main.0f7211a62a708c7f.js",
+        "/store/manifest.webmanifest",
+        "/store/polyfills.5551af830032990c.js",
+        "/store/runtime.3d272652a87c75de.js",
+        "/store/styles.b16ea0a58350e95e.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/store/assets/icons/icon-128x128.png",
+        "/store/assets/icons/icon-144x144.png",
+        "/store/assets/icons/icon-152x152.png",
+        "/store/assets/icons/icon-192x192.png",
+        "/store/assets/icons/icon-384x384.png",
+        "/store/assets/icons/icon-512x512.png",
+        "/store/assets/icons/icon-72x72.png",
+        "/store/assets/icons/icon-96x96.png",
+        "/store/assets/images/logo.png",
+        "/store/assets/shipping.json"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "api-performance",
+      "patterns": [
+        "\\/api\\/store\\/products",
+        "\\/api\\/store\\/product",
+        "\\/api\\/store\\/shippings"
+      ],
+      "strategy": "performance",
+      "maxSize": 10,
+      "maxAge": 3600000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    },
+    {
+      "name": "api-freshness",
+      "patterns": [
+        "\\/api\\/store\\/time"
+      ],
+      "strategy": "freshness",
+      "maxSize": 10,
+      "maxAge": 60000,
+      "timeoutMs": 1000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/store/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/store/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/store/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/store/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/store/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/store/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/store/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/store/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/store/assets/images/logo.png": "160f711b2b6dc91bc7745007abb17b68a2086c5f",
+    "/store/assets/shipping.json": "f554a4766d97d43797cb5cb5a95b2c5d0e85c10d",
+    "/store/favicon.ico": "04c278dba3e54393c4c980f7fd4dcd43796ef813",
+    "/store/index.html": "19c541419aa51c31c17d89b383b683f6fe7d2e6f",
+    "/store/main.0f7211a62a708c7f.js": "31fe9cc9d5c4c99624b6e6b43843d753747064b1",
+    "/store/manifest.webmanifest": "b85102eb452d624f639350a1e51b840859520351",
+    "/store/polyfills.5551af830032990c.js": "8448cfc96e034d4aa2bb24b8eb812c90337a7600",
+    "/store/runtime.3d272652a87c75de.js": "f1d94bca69bdd4a72090db86383d4be0b0f9646f",
+    "/store/styles.b16ea0a58350e95e.css": "a1e697c677f418669e2795b703a63d639a03e7ab"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}

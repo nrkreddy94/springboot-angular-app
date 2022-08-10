@@ -1,0 +1,17 @@
+version: '2'
+services:
+    store-app:
+        container_name: store-app
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: nrkreddy94/store-app:0.0.1-SNAPSHOT
+        ports:
+            - 9090:8080
+        restart: always
+        networks:
+            - store-app-network
+    
+networks:
+    store-app-network:
+        driver: bridge
